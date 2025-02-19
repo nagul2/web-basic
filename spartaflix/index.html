@@ -154,32 +154,6 @@
                 });
 
 
-            function makeCard() {
-                let image = $("#image").val();
-                let title = $("#title").val();
-                let comment = $("#comment").val();
-                let starNum = parseInt($("#starNum").val());
-                let star = "";
-                for (let i = 0; i < starNum; i++) {
-                    star += "⭐";
-                }
-
-                let addMovie = `
-                <div class="col">
-                    <div class="card h-100">
-                        <img
-                            src="${image}"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">${title}</h5>
-                            <p class="card-text">${star}</p>
-                            <p class="card-text">${comment}</p>
-                        </div>
-                    </div>
-                </div>`;
-
-                $("#card").append(addMovie);
-            }
         </script>
     </head>
     <body>
