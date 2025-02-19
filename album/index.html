@@ -122,10 +122,10 @@
             docs.forEach((doc) => {
                 let row = doc.data();
 
-                let image = row['image'];
-                let title = row['title'];
-                let content = row['content'];
-                let date = row['date'];
+                let image = row["image"];
+                let title = row["title"];
+                let content = row["content"];
+                let date = row["date"];
 
                 let addTag = `
                             <div class="col">
@@ -148,7 +148,6 @@
                 $("#card").append(addTag);
             });
 
-
             let url = "http://spartacodingclub.shop/sparta_api/seoulair";
             fetch(url)
                 .then((res) => res.json())
@@ -156,7 +155,6 @@
                     let mise = data["RealtimeCityAir"]["row"][0]["IDEX_NM"];
                     $("#mise").text(mise);
                 });
-
         </script>
     </head>
     <body>
